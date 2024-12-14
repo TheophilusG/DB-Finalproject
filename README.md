@@ -107,14 +107,13 @@ C-Town: $3.08
 Associated Supermarket: $3.00
 Trader Joe's: $2.95
 
-Conclusion and Next Steps: Summary and Future Analysis
-Conclusions
+# Conclusion and Next Steps: Summary and Future Analysis
 
-Machine learning models can effectively predict grocery prices
+Machine learning models can effectively predict grocery prices 
 Item type is the most critical factor in price determination
 Significant price variations exist across NYC neighborhoods and stores
 
-Recommended Next Steps
+# Recommended Next Steps
 
 Collect more granular data on:
 
@@ -123,14 +122,14 @@ Specific product attributes
 Detailed store inventory
 
 
-Enhance models by:
+# Enhance models by:
 
 Incorporating time-series analysis
 Exploring advanced ensemble methods
 Collecting more feature-rich data
 
 
-Potential Applications:
+# Potential Applications:
 
 Consumer price comparison tools
 Retail pricing strategy optimization
@@ -138,7 +137,7 @@ Urban economic research
 
 
 
-Limitations
+# Limitations
 
 Limited feature set
 Potential manual data scrapping and collection biases
