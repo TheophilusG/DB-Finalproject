@@ -1,76 +1,146 @@
-# Predicting Grocery Prices in New York City
+# Grocery Price Prediction in New York City: A Machine Learning Approach
 
-Introduction
-This project aims to develop a predictive model for grocery prices across different neighborhoods in New York City. By analyzing factors such as store type, neighborhood, and specific grocery items, we seek to understand the dynamics of food pricing in the city.
-Data Description
-Our dataset includes the following key features:
+# Introduction: 
 
-Store: Different grocery stores across NYC
-Neighborhood: Five NYC boroughs
-Item: Ten common grocery items
-Price: The cost of each item
+In an era of fluctuating food prices and diverse urban markets, understanding grocery pricing dynamics becomes crucial for consumers, retailers, and urban economists. This project focuses on developing predictive models to estimate grocery prices across different neighborhoods, stores, and items in New York City. The primary predictive task is to build machine learning models that can accurately predict grocery item prices based on categorical features such as store location, neighborhood, and specific grocery items. By leveraging various regression techniques, we aim to:
 
-Dataset Characteristics
+Understand the key factors influencing grocery prices
+Develop models with high predictive accuracy
+Provide insights into price variations across different urban contexts
 
-Total Entries: 250 (50 entries per neighborhood)
-Features: Categorical (Store, Neighborhood, Item) and Numerical (Price)
-Date Range: Current snapshot of prices
+Key summary findings include:
 
-Modeling Approaches
-We implemented four different regression models to predict grocery prices:
+Random Forest and Linear Regression models demonstrated high predictive accuracy, with R² scores around 0.89-0.90
+Item type emerged as the most significant feature in price prediction
+Significant price variations exist across neighborhoods and stores in New York City
 
-Multiple Linear Regression
-K-Nearest Neighbors (KNN)
-Decision Tree Regression
+Data Description: Data Source and Description
+Dataset: NYC Grocery Prices Dataset
+Source: Generated synthetic dataset simulating grocery prices
+Size: 250 observations
+Features: 
+Date: Timestamp of price recording
+Store: Grocery store name (Whole Foods, Trader Joe's, Key Food, C-Town, etc.)
+Neighborhood: NYC borough (Manhattan, Brooklyn, Queens, Bronx, Staten Island)
+Item: Specific grocery items (Cheese, Bananas, Chicken, Milk, Eggs, etc.)
+Price: Target variable representing item price
+
+Descriptive Statistics:
+
+Mean Price: $3.05
+Price Standard Deviation: $1.74
+Price Range: $0.31 - $9.21
+
+Models and Methods: Overview of Models and Implementation Preprocessing
+
+Categorical feature encoding using OneHotEncoder
+Train-test split (80% training, 20% testing)
+Handling categorical variables: Store, Neighborhood, Item
+
+Regression Models Evaluated
+
+Linear Regression
 Random Forest Regression
+K-Nearest Neighbors Regression
+Decision Tree Regression
 
-Model Evaluation Metric: Mean Squared Error (MSE)
-Key Findings
-1. Price Distribution
+# Evaluation Metrics
 
-Average Price: $3.50
-Price Range: $0.60 - $6.50
-Moderate price variability across stores and neighborhoods
+Mean Squared Error (MSE)
+R² Score
 
-2. Neighborhood Price Variations
+Results and Interpretation: Review of Modeling Results
+Model Performance Comparison
 
-Manhattan shows the highest average prices
-Staten Island demonstrates the lowest price points
-Brooklyn and Queens show moderate pricing
+Random Forest
 
-3. Model Performance Comparison
-
-Random Forest: Best performing model
-
-Lowest Mean Squared Error
-Most robust in capturing price variations
+MSE: 0.383
+R² Score: 0.898
+Best overall performance
 
 
-K-Nearest Neighbors: Strong performance
-Decision Tree: Moderate performance
-Linear Regression: Least effective
+Linear Regression
 
-4. Feature Importance
-Top influential features in predicting prices:
+MSE: 0.391
+R² Score: 0.896
+Close second-best performance
 
-Store Type
-Neighborhood
-Specific Grocery Item
 
+Decision Tree
+
+MSE: 0.537
+R² Score: 0.857
+Moderate performance
+
+
+K-Nearest Neighbors
+
+MSE: 1.571
+R² Score: 0.581
+Lowest predictive accuracy
+
+
+
+Feature Importance Analysis
+Top features influencing price prediction:
+
+Cheese (Pound): 29.3%
+Bananas (Pound): 18.4%
+Chicken (Pound): 13.2%
+Manhattan Neighborhood: 12.0%
+Milk (Gallon): 7.3%
+
+Neighborhood and Store Price Insights
+Average Prices by Neighborhood:
+
+Manhattan: $4.13
+Brooklyn: $3.30
+Queens: $3.01
+Bronx: $2.58
+Staten Island: $2.24
+
+Average Prices by Store:
+
+Whole Foods: $3.14
+Key Food: $3.09
+C-Town: $3.08
+Associated Supermarket: $3.00
+Trader Joe's: $2.95
+
+Conclusion and Next Steps: Summary and Future Analysis
 Conclusions
 
-Grocery prices in NYC vary significantly based on location and store type
-Random Forest models can effectively capture these complex pricing dynamics
-Neighborhood and store selection substantially impact grocery expenses
+Machine learning models can effectively predict grocery prices
+Item type is the most critical factor in price determination
+Significant price variations exist across NYC neighborhoods and stores
 
-Recommendations
+Recommended Next Steps
 
-Budget-conscious consumers: Compare prices across different neighborhoods
-Retailers: Consider location-specific pricing strategies
-Policymakers: Investigate price disparities across city regions
+Collect more granular data on:
 
-Future Research
+Seasonal price variations
+Specific product attributes
+Detailed store inventory
 
-Incorporate more granular neighborhood data
-Include seasonality and time-based price variations
-Expand dataset with more stores and items
+
+Enhance models by:
+
+Incorporating time-series analysis
+Exploring advanced ensemble methods
+Collecting more feature-rich data
+
+
+Potential Applications:
+
+Consumer price comparison tools
+Retail pricing strategy optimization
+Urban economic research
+
+
+
+Limitations
+
+Limited feature set
+Potential manual data scrapping and collection biases
+
+This analysis provides a foundation for understanding grocery pricing dynamics in New York City, offering insights for consumers, retailers, and researchers interested in urban food economics.
