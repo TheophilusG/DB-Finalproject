@@ -129,10 +129,7 @@ Top Influential Features in Price Prediction:
 - Snapshot of prices at a specific time
 
 ## Repository Structure
-- `data/`: Contains raw and processed datasets
-- `notebooks/`: Jupyter notebooks for EDA and modeling
-- `src/`: Python scripts for data preprocessing and modeling
-- `visualizations/`: Generated plots and charts
+- `Final Project.ipynb`: Fully completed code
 - `README.md`: Project documentation
 
 ## Programming language and libraries Used
